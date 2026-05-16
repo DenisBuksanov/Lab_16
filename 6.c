@@ -53,9 +53,9 @@ void zapusk_45() {
     printf("\nзадание 4,5: Отмена и очистка\n");
     pthread_t tid;
     pthread_create(&tid, NULL, otmena, NULL);
-    printf("[Main] Ждём 2 секунды...\n");
+    printf("Ждём 2 секунды...\n");
     sleep(2);
-    printf("[Main] Отменяем поток...\n");
+    printf("Отменяем поток...\n");
     pthread_cancel(tid);
     pthread_join(tid, NULL);
 }
